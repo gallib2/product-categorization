@@ -11,6 +11,7 @@ The features in the datasets among other thing includes name of the product, his
 This project is aimed to build a predictive model that is able to distinguish products between more then 1500 product categories.
 A few selected classification learning models will be trained by the dataset that includes each product’s corresponding category.
 Our dataset contains numeric values, string values and images.
+
 Our main problems was:
 * How to convert the string values to a numeric vectors, and what is the better way to do so
 * How to deal with a large amount of data
