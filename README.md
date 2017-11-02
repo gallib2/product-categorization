@@ -16,12 +16,32 @@ Our main problems was:
 * How to deal with a large amount of data
 * Which classifier is the best for accomplish project objective
 
-
 ### The Solution
 In order to classify the products that contains numeric values, string values and images,
 we use two different of classifiers - SVM and KNN,
 although the first step was to convert the string values to numeric vectors.
 Part of the converting processes includes using Bag Of Words and several different sparse matrix - binary, tf, tf-idf, and sublinear tf-idf.
+
+## Some results on the textual data
+* #### SVM ([linear SVM from scikit-learn](http://scikit-learn.org/stable/modules/generated/sklearn.svm.LinearSVC.html))
+	* dataset weight: Tf
+	* Stratified cross validation with k folds (k = 6)
+	the results with differnt C parameters:
+	
+	
+	* dataset weight: Tf-Idf (sublinear tf scaling, i.e. replace tf with 1 + log(tf))
+	* Stratified cross validation with k folds (k = 6)
+	the results with differnt C parameters:
+	
+	
+	* dataset weight: Tf-Idf
+	* Stratified cross validation with k folds (k = 6)
+	the results with differnt C parameters:
+	
+	
+	* dataset weight: Binary
+	* Stratified cross validation with k folds (k = 6)
+	the results with differnt C parameters:
 
 ## Explanations of the included files
 
