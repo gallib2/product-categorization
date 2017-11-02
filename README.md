@@ -27,21 +27,22 @@ Part of the converting processes includes using Bag Of Words and several differe
 	* dataset weight: Tf
 	* Stratified cross validation with k folds (k = 6)
 	the results with differnt C parameters:
-	
+	![exp1](https://user-images.githubusercontent.com/22280734/32327116-06c94d38-bfde-11e7-8d51-19fe4bcbebe4.PNG)
 	
 	* dataset weight: Tf-Idf (sublinear tf scaling, i.e. replace tf with 1 + log(tf))
 	* Stratified cross validation with k folds (k = 6)
 	the results with differnt C parameters:
-	
+	![exp2](https://user-images.githubusercontent.com/22280734/32327117-06e82262-bfde-11e7-9242-3a4e88953096.PNG)
 	
 	* dataset weight: Tf-Idf
 	* Stratified cross validation with k folds (k = 6)
 	the results with differnt C parameters:
-	
+	![exp3](https://user-images.githubusercontent.com/22280734/32327118-07073ee0-bfde-11e7-9cff-34024d72a9b5.PNG)
 	
 	* dataset weight: Binary
 	* Stratified cross validation with k folds (k = 6)
 	the results with differnt C parameters:
+	![exp4](https://user-images.githubusercontent.com/22280734/32327115-06a8e764-bfde-11e7-8576-10f02ecfe450.PNG)
 
 ## Explanations of the included files
 
