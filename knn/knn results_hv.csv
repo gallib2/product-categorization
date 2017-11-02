@@ -1,0 +1,27 @@
+test #,classifier,scale_method,min_d,max_f,k_clusters,nbrs,metric,Correctly Classified Instances,Accuracy percentage,Incorrectly Classified Instances,Inaccurate percentage
+49,KNeighborsClassifier,HashingVectorizer,1,3000,3,5,euclidean,69728,48.89%,72891,51.11%
+50,KNeighborsClassifier,HashingVectorizer,1,3000,3,5,cosine,88002,61.70%,54617,38.30%
+51,KNeighborsClassifier,HashingVectorizer,1,5000,3,5,euclidean,70269,49.27%,72350,50.73%
+52,KNeighborsClassifier,HashingVectorizer,1,5000,3,5,cosine,88498,62.05%,54121,37.95%
+53,KNeighborsClassifier,HashingVectorizer,1,10000,3,5,euclidean,70607,49.51%,72012,50.49%
+54,KNeighborsClassifier,HashingVectorizer,1,10000,3,5,cosine,88934,62.36%,53685,37.64%
+55,KNeighborsClassifier,HashingVectorizer,1,20000,3,5,euclidean,70782,49.63%,71837,50.37%
+56,KNeighborsClassifier,HashingVectorizer,1,20000,3,5,cosine,89203,62.55%,53416,37.45%
+57,MultiClusterIndex,HashingVectorizer,1,3000,3,5,euclidean,87856,61.60%,54763,38.40%
+58,MultiClusterIndex,HashingVectorizer,1,3000,3,5,cosine,87336,61.24%,55283,38.76%
+59,MultiClusterIndex,HashingVectorizer,1,5000,3,5,euclidean,83215,58.35%,59404,41.65%
+60,MultiClusterIndex,HashingVectorizer,1,5000,3,5,cosine,82132,57.59%,60487,42.41%
+61,MultiClusterIndex,HashingVectorizer,1,10000,3,5,euclidean,85475,59.93%,57144,40.07%
+62,MultiClusterIndex,HashingVectorizer,1,10000,3,5,cosine,84870,59.51%,57749,40.49%
+63,MultiClusterIndex,HashingVectorizer,1,20000,3,5,euclidean,84982,59.59%,57637,40.41%
+64,MultiClusterIndex,HashingVectorizer,1,20000,3,5,cosine,85406,59.88%,57213,40.12%
+65,NearestNeighbors,HashingVectorizer,1,3000,3,5,euclidean,67468,47.31%,75151,52.69%
+66,NearestNeighbors,HashingVectorizer,1,3000,3,5,cosine,89087,62.47%,53532,37.53%
+67,NearestNeighbors,HashingVectorizer,1,5000,3,5,euclidean,59442,41.68%,83177,58.32%
+68,NearestNeighbors,HashingVectorizer,1,5000,3,5,cosine,86521,60.67%,56098,39.33%
+69,NearestNeighbors,HashingVectorizer,1,10000,3,5,euclidean,59401,41.65%,83218,58.35%
+70,NearestNeighbors,HashingVectorizer,1,10000,3,5,cosine,86902,60.93%,55717,39.07%
+71,NearestNeighbors,HashingVectorizer,1,20000,3,5,euclidean,59484,41.71%,83135,58.29%
+72,NearestNeighbors,HashingVectorizer,1,20000,3,5,cosine,87269,61.19%,55350,38.81%
+,,,,,,,,,,,
+,,,,,,,,,,,

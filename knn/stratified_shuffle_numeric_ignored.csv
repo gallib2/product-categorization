@@ -1,0 +1,2 @@
+classifier,scale_method,min_d,max_f,k_clusters,nbrs,metric,Correctly Classified Instances,Accuracy percentage,Incorrectly Classified Instances,Inaccurate percentage,radius
+KNeighborsClassifier,tf-idf,1,3500,None,5,euclidean,81622,57.23%,60997,42.77%,

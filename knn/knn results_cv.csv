@@ -1,0 +1,25 @@
+test #,classifier,scale_method,min_d,max_f,k_clusters,nbrs,metric,Correctly Classified Instances,Accuracy percentage,Incorrectly Classified Instances,Inaccurate percentage
+25,KNeighborsClassifier,CountVectorizer,1,3000,3,5,euclidean,72383,50.75%,70236,49.25%
+26,KNeighborsClassifier,CountVectorizer,1,3000,3,5,cosine,87177,61.13%,55442,38.87%
+27,KNeighborsClassifier,CountVectorizer,1,5000,3,5,euclidean,72417,50.78%,70202,49.22%
+28,KNeighborsClassifier,CountVectorizer,1,5000,3,5,cosine,88326,61.93%,54293,38.07%
+29,KNeighborsClassifier,CountVectorizer,1,10000,3,5,euclidean,72374,50.75%,70245,49.25%
+30,KNeighborsClassifier,CountVectorizer,1,10000,3,5,cosine,89121,62.49%,53498,37.51%
+31,KNeighborsClassifier,CountVectorizer,1,20000,3,5,euclidean,71743,50.30%,70876,49.70%
+32,KNeighborsClassifier,CountVectorizer,1,20000,3,5,cosine,89548,62.79%,53071,37.21%
+33,MultiClusterIndex,CountVectorizer,1,3000,3,5,euclidean,82486,57.84%,60133,42.16%
+34,MultiClusterIndex,CountVectorizer,1,3000,3,5,cosine,78093,54.76%,64526,45.24%
+35,MultiClusterIndex,CountVectorizer,1,5000,3,5,euclidean,81627,57.23%,60992,42.77%
+36,MultiClusterIndex,CountVectorizer,1,5000,3,5,cosine,75292,52.79%,67327,47.21%
+37,MultiClusterIndex,CountVectorizer,1,10000,3,5,euclidean,82909,58.13%,59710,41.87%
+38,MultiClusterIndex,CountVectorizer,1,10000,3,5,cosine,82377,57.76%,60242,42.24%
+39,MultiClusterIndex,CountVectorizer,1,20000,3,5,euclidean,85300,59.81%,57319,40.19%
+40,MultiClusterIndex,CountVectorizer,1,20000,3,5,cosine,85612,60.03%,57007,39.97%
+41,NearestNeighbors,CountVectorizer,1,3000,3,5,euclidean,67144,47.08%,75475,52.92%
+42,NearestNeighbors,CountVectorizer,1,3000,3,5,cosine,87955,61.67%,54664,38.33%
+43,NearestNeighbors,CountVectorizer,1,5000,3,5,euclidean,62845,44.06%,79774,55.94%
+44,NearestNeighbors,CountVectorizer,1,5000,3,5,cosine,86708,60.80%,55911,39.20%
+45,NearestNeighbors,CountVectorizer,1,10000,3,5,euclidean,61314,42.99%,81305,57.01%
+46,NearestNeighbors,CountVectorizer,1,10000,3,5,cosine,87595,61.42%,55024,38.58%
+47,NearestNeighbors,CountVectorizer,1,20000,3,5,euclidean,59917,42.01%,82702,57.99%
+48,NearestNeighbors,CountVectorizer,1,20000,3,5,cosine,87860,61.60%,54759,38.40%
