@@ -24,26 +24,85 @@ Part of the converting processes includes using Bag Of Words and several differe
 
 ## Some results on the textual data
 * #### SVM ([linear SVM from scikit-learn](http://scikit-learn.org/stable/modules/generated/sklearn.svm.LinearSVC.html))
-	* dataset weight: Tf
-	* Stratified cross validation with k folds (k = 6)
-	the results with differnt C parameters:
+	* Dataset weight: Tf
+	* Distribution of data: Stratified cross validation with k folds (k = 6)
+	The results with differnt C parameters:
 	![exp1](https://user-images.githubusercontent.com/22280734/32327116-06c94d38-bfde-11e7-8d51-19fe4bcbebe4.PNG)
 	
-	* dataset weight: Tf-Idf (sublinear tf scaling, i.e. replace tf with 1 + log(tf))
-	* Stratified cross validation with k folds (k = 6)
-	the results with differnt C parameters:
+	
+	![Tf-write_answers__c-2^-5](https://user-images.githubusercontent.com/22280734/32329308-59365622-bfe5-11e7-86cd-85439f5fcce5.JPG)
+	
+	* Dataset weight: Tf-Idf (sublinear tf scaling, i.e. replace tf with 1 + log(tf))
+	* Distribution of data: Stratified cross validation with k folds (k = 6)
+	The results with differnt C parameters:
 	![exp2](https://user-images.githubusercontent.com/22280734/32327117-06e82262-bfde-11e7-9242-3a4e88953096.PNG)
 	
-	* dataset weight: Tf-Idf
-	* Stratified cross validation with k folds (k = 6)
-	the results with differnt C parameters:
+	![Tf-Idf_sublinear_write_answers](https://user-images.githubusercontent.com/22280734/32329220-0bf3abee-bfe5-11e7-9ec4-5fac7740b7b1.JPG)
+	
+	* Dataset weight: Tf-Idf
+	* Distribution of data: Stratified cross validation with k folds (k = 6)
+	The results with differnt C parameters:
 	![exp3](https://user-images.githubusercontent.com/22280734/32327118-07073ee0-bfde-11e7-9cff-34024d72a9b5.PNG)
 	
-	* dataset weight: Binary
-	* Stratified cross validation with k folds (k = 6)
-	the results with differnt C parameters:
-	![exp4](https://user-images.githubusercontent.com/22280734/32327115-06a8e764-bfde-11e7-8576-10f02ecfe450.PNG)
+	![Tf-Idf_write_answers_c-2^-5](https://user-images.githubusercontent.com/22280734/32329162-d63b6afa-bfe4-11e7-82ae-0f202cf1761a.JPG)
 
+	
+	* Dataset weight: Binary
+	* Distribution of data: Stratified cross validation with k folds (k = 6)
+	The results with differnt C parameters:
+	![exp4](https://user-images.githubusercontent.com/22280734/32327115-06a8e764-bfde-11e7-8576-10f02ecfe450.PNG)
+	
+	![Binary-write_answers_c-2^-5](https://user-images.githubusercontent.com/22280734/32329299-5271f3fa-bfe5-11e7-994d-1afdbae67433.JPG)
+
+
+* #### KNN 
+	* Dataset weight: HashVectorizer
+	* Distribution of data: 20%-80% randomly
+	* Search method: Nearest neighbors
+	* Distance method: Cosine
+	* Number of neighbors: 5
+	The results:
+	
+	![exp1](https://user-images.githubusercontent.com/22280734/32327928-ef9ed558-bfe0-11e7-880e-655a61ea28cd.PNG)
+	
+	* Dataset weight: CountVectorizer
+	* Distribution of data: 20%-80% randomly
+	* Search method: Nearest neighbors
+	* Distance method: Cosine
+	The results:
+	
+	![exp2](https://user-images.githubusercontent.com/22280734/32327929-efbfe6b2-bfe0-11e7-833d-b8091e072adc.PNG)
+	
+	* Dataset weight: Tf-Idf with ignoring numerical values
+	* Distribution of data: Stratified cross validation with k folds (k = 5)
+	* Search method: K Neighbors Classifier
+	* Distance method: Euclidean
+	The results:
+	
+	![exp3](https://user-images.githubusercontent.com/22280734/32327931-efe0311a-bfe0-11e7-9ceb-7b25341adea4.PNG)
+	
+	* Dataset weight: Tf-Idf
+	* Distribution of data: Stratified cross validation with k folds (k = 5)
+	* min_d: 1 (min_d – Create a dictionary composed of all the words that appear in the minimum min_d documents)
+	The results:
+	
+	![exp4](https://user-images.githubusercontent.com/22280734/32327932-effe7116-bfe0-11e7-84e3-dee80dcd9b05.PNG)
+	
+	* Dataset weight: CountVectorizer
+	* Distribution of data: Stratified cross validation with k folds (k = 5)
+	* min_d: 1 (min_d – Create a dictionary composed of all the words that appear in the minimum min_d documents)
+	The results:
+	
+	![exp5](https://user-images.githubusercontent.com/22280734/32327933-f0234590-bfe0-11e7-90a9-f92735fc78f7.PNG)
+	
+	* Dataset weight: HashingVectorizer
+	* Distribution of data: Stratified cross validation with k folds (k = 5)
+	* min_d: 1 (min_d – Create a dictionary composed of all the words that appear in the minimum min_d documents)
+	The results:
+	
+	![exp6](https://user-images.githubusercontent.com/22280734/32327934-f04cdbda-bfe0-11e7-9c9b-d1aeec4431d1.PNG)
+	
+	
 ## Explanations of the included files
 
 #### Note :
