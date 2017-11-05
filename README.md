@@ -2,40 +2,40 @@
 
 ## Description
 The objective of this project is to apply classification learning models on Sears products dataset with more than 100,000 
-products and therefore to obtain a predictive model with high accuracy for identifying future products categories.
+products, and therefore to obtain a predictive model with high accuracy for identifying future products categories.
 
 ### The dataset
-The features in the datasets among other thing includes name of the product, his description, price, image, and etc. 
-
-### The problem
-This project is aimed to build a predictive model that is able to distinguish products between more then 1500 product categories.
-A few selected classification learning models will be trained by the dataset that includes each product’s corresponding category.
+The features in the datasets, among other things, include the name of the product, its description, price, image etc. 
 Our dataset contains numeric values, string values and images.
+### Goal
+The project is aimed to categorize products according to existing metadata (name,
+description, price, image) to a given taxonomy, by building ML algorithm that
+classifies products according to their data.
 
-Our main problems was:
-* How to convert the string values to a numeric vectors, and what is the better way to do so
-* How to deal with a large amount of data
-* Which classifier is the best for accomplish project objective
+Our main challenges were:
+* How to convert the string values to a numeric vectors, and what is the better way to do so?
+* How to deal with a large amount of data?
+* Which classifier is the best to accomplish the project objective?
 
 ### The Solution
-In order to classify the products that contains numeric values, string values and images,
-we use two different of classifiers - SVM and KNN,
-although the first step was to convert the string values to numeric vectors.
-Part of the converting processes includes using Bag Of Words and several different sparse matrix - binary, tf, tf-idf, and sublinear tf-idf.
+In order to classify the products that contain numeric values, string values and images,
+we used two different classifiers - SVM and KNN.
+The first step was to convert the string values to numeric vectors.
+As a part of the converting process, we used Bag Of Words and several different sparse matrix - binary, tf, tf-idf, and sublinear tf-idf.
 
 ## Some results on the textual data
 * #### SVM ([linear SVM from scikit-learn](http://scikit-learn.org/stable/modules/generated/sklearn.svm.LinearSVC.html))
 	* Dataset weight: Tf
-	* Distribution of data: Stratified cross validation with k folds (k = 6)
+	* Data distribution: Stratified cross validation with k folds (k = 6)
 	
-	The results with differnt C parameters:
+	The results with different C parameters:
 	![exp1](https://user-images.githubusercontent.com/22280734/32327116-06c94d38-bfde-11e7-8d51-19fe4bcbebe4.PNG)
 	
 	
 	![Tf-write_answers__c-2^-5](https://user-images.githubusercontent.com/22280734/32329308-59365622-bfe5-11e7-86cd-85439f5fcce5.JPG)
 	
 	* Dataset weight: Tf-Idf (sublinear tf scaling, i.e. replace tf with 1 + log(tf))
-	* Distribution of data: Stratified cross validation with k folds (k = 6)
+	* Data distribution: Stratified cross validation with k folds (k = 6)
 	
 	The results with differnt C parameters:
 	![exp2](https://user-images.githubusercontent.com/22280734/32327117-06e82262-bfde-11e7-9242-3a4e88953096.PNG)
@@ -43,18 +43,18 @@ Part of the converting processes includes using Bag Of Words and several differe
 	![Tf-Idf_sublinear_write_answers](https://user-images.githubusercontent.com/22280734/32329220-0bf3abee-bfe5-11e7-9ec4-5fac7740b7b1.JPG)
 	
 	* Dataset weight: Tf-Idf
-	* Distribution of data: Stratified cross validation with k folds (k = 6)
+	* Data distribution: Stratified cross validation with k folds (k = 6)
 	
-	The results with differnt C parameters:
+	The results with different C parameters:
 	![exp3](https://user-images.githubusercontent.com/22280734/32327118-07073ee0-bfde-11e7-9cff-34024d72a9b5.PNG)
 	
 	![Tf-Idf_write_answers_c-2^-5](https://user-images.githubusercontent.com/22280734/32329162-d63b6afa-bfe4-11e7-82ae-0f202cf1761a.JPG)
 
 	
 	* Dataset weight: Binary
-	* Distribution of data: Stratified cross validation with k folds (k = 6)
+	* Data distribution: Stratified cross validation with k folds (k = 6)
 	
-	The results with differnt C parameters:
+	The results with different C parameters:
 	![exp4](https://user-images.githubusercontent.com/22280734/32327115-06a8e764-bfde-11e7-8576-10f02ecfe450.PNG)
 	
 	![Binary-write_answers_c-2^-5](https://user-images.githubusercontent.com/22280734/32329299-5271f3fa-bfe5-11e7-994d-1afdbae67433.JPG)
@@ -62,7 +62,7 @@ Part of the converting processes includes using Bag Of Words and several differe
 
 * #### KNN 
 	* Dataset weight: HashVectorizer
-	* Distribution of data: 20%-80% randomly
+	* Data distribution: 20%-80% randomly
 	* Search method: Nearest neighbors
 	* Distance method: Cosine
 	* Number of neighbors: 5
@@ -72,7 +72,7 @@ Part of the converting processes includes using Bag Of Words and several differe
 	![exp1](https://user-images.githubusercontent.com/22280734/32327928-ef9ed558-bfe0-11e7-880e-655a61ea28cd.PNG)
 	
 	* Dataset weight: CountVectorizer
-	* Distribution of data: 20%-80% randomly
+	* Data distribution: 20%-80% randomly
 	* Search method: Nearest neighbors
 	* Distance method: Cosine
 	
@@ -81,7 +81,7 @@ Part of the converting processes includes using Bag Of Words and several differe
 	![exp2](https://user-images.githubusercontent.com/22280734/32327929-efbfe6b2-bfe0-11e7-833d-b8091e072adc.PNG)
 	
 	* Dataset weight: Tf-Idf with ignoring numerical values
-	* Distribution of data: Stratified cross validation with k folds (k = 5)
+	* Data distribution: Stratified cross validation with k folds (k = 5)
 	* Search method: K Neighbors Classifier
 	* Distance method: Euclidean
 	
@@ -90,7 +90,7 @@ Part of the converting processes includes using Bag Of Words and several differe
 	![exp3](https://user-images.githubusercontent.com/22280734/32327931-efe0311a-bfe0-11e7-9ceb-7b25341adea4.PNG)
 	
 	* Dataset weight: Tf-Idf
-	* Distribution of data: Stratified cross validation with k folds (k = 5)
+	* Data distribution: Stratified cross validation with k folds (k = 5)
 	* min_d: 1 (min_d – Create a dictionary composed of all the words that appear in the minimum min_d documents)
 	
 	The results:
@@ -98,7 +98,7 @@ Part of the converting processes includes using Bag Of Words and several differe
 	![exp4](https://user-images.githubusercontent.com/22280734/32327932-effe7116-bfe0-11e7-84e3-dee80dcd9b05.PNG)
 	
 	* Dataset weight: CountVectorizer
-	* Distribution of data: Stratified cross validation with k folds (k = 5)
+	* Data distribution: Stratified cross validation with k folds (k = 5)
 	* min_d: 1 (min_d – Create a dictionary composed of all the words that appear in the minimum min_d documents)
 	
 	The results:
@@ -106,7 +106,7 @@ Part of the converting processes includes using Bag Of Words and several differe
 	![exp5](https://user-images.githubusercontent.com/22280734/32327933-f0234590-bfe0-11e7-90a9-f92735fc78f7.PNG)
 	
 	* Dataset weight: HashingVectorizer
-	* Distribution of data: Stratified cross validation with k folds (k = 5)
+	* Data distribution: Stratified cross validation with k folds (k = 5)
 	* min_d: 1 (min_d – Create a dictionary composed of all the words that appear in the minimum min_d documents)
 	
 	The results:
@@ -117,83 +117,82 @@ Part of the converting processes includes using Bag Of Words and several differe
 ## Explanations of the included files
 
 #### Note :
-The files `'products_clean_144K_only_name_desc_clean.rar'`, `'All_products_clean.rar'`, `'products_all_cleanest.rar'` that in the main folder
-and `'products_all_cleanest.rar'`, `'products_clean_144K.rar'`, `'products_clean_144K_price.rar'`, that in the csvfiles folder
-are the CSV files, and must to be extracted before using the files.
+The files `'products_clean_144K_only_name_desc_clean.rar'`, `'All_products_clean.rar'`, `'products_all_cleanest.rar'` , which are in the main folder
+and `'products_all_cleanest.rar'`, `'products_clean_144K.rar'`, `'products_clean_144K_price.rar'`, which are in the “csvfiles” folder.
+These are CSV files, which must be extracted before using.
 
 * ### clear_csv.py
 
     #### When to use
-      use this file first.
+      Use this file first.
 
     #### How to use
-      open terminal in this file location, and write:
+      Open the terminal in the file’s location, and write:
       'python clear_csv.py -f products.csv'
       (when the 'products.csv' is the csv file to clean)
 
-    #### The file contains
-	    main function that clears the csv file from Special Characters.
+    #### The file contains:
+Main function that clears the csv file from Special Characters.
 
 	
 * ### clean_csv.py
     #### When to use
-      use this file after "clear_csv.py".
+      Use this file after "clear_csv.py".
 
     #### How to use
-      in this file, change the 'file_name_load' and 'file_name_save' variables to the wanted csv file name.
+      Change the 'file_name_load' and 'file_name_save' variables to the wanted csv file name.
 
-    #### The file contains
-      this file was created to make some additional cleanup of the csv file for improving the svm,
-      and contains function that does:
-       1. Remove HTML Tags
-       2. Remove non-letters
-       3. Convert to lower case, split into individual words
-       5. Remove stop words
-       6. stem words
+    #### The file contains:
+      This file was created to make some additional cleanups of the csv file, in order to improve the SVM,
+      and contains a function that:
+       1. Removes HTML Tags
+       2. Removes non-letters
+       3. Converts to lower case, splits into individual words
+       5. Removes stop words
+       6. Stems words
 
 * ### csvfixes.py
 
     #### When to use
-      use this file after "clear_csv.py" and "clean_csv.py"
-      this file was created to make some additional cleanup of the csv file for improving the svm
+      Use this file after "clear_csv.py" and "clean_csv.py".
+      This file was created to make some additional cleanups of the csv file, in order to improve the SVM.
 
     #### How to use
-      in this file, change the 'file_name_load' and 'file_name_save' variables to the wanted csv file name.
+      Change the 'file_name_load' and 'file_name_save' variables to the wanted csv file name.
 
     #### The file contains
-      this file contains 3 main functions:
-      1. "remove_irrelevant_docs" - removes documents that belong to categories with frequency < 5 
-      2. "match_number_to_category_id" - sequentially matches a number to category id (from 1 to category size),
-         to an added new column: "CategoryNumber"
-      3. "remove_unique_words" - removes words that appear only once in the entire document
+      The file contains three main functions:
+      1. "remove_irrelevant_docs" - Removes documents that belong to categories with frequency < 5 
+      2. "match_number_to_category_id" – Adds a new column ("CategoryNumber") which sequentially matches a number to each category id (from 1 to category size).
+         
+      3. "remove_unique_words" - Removes words that appear only once in the entire document
         (this function is not relevant in case of using "max features" in Bag Of Words function)
-      4. "remove_special_chars" - removes given characters from entire document.
+      4. "remove_special_chars" - Removes given characters from the entire document.
   
 * ### svm_linear.py
     #### When to use
-      use this file after "clear_csv.py", "clean_csv.py" and "csvfixes.py"
+      Use this file after using "clear_csv.py", "clean_csv.py" and "csvfixes.py"
 
     #### How to use
-      in this file, change:
-      1. 'file_name_load' variable to the wanted csv file name.
-      2. 'c_parameter' variable to the wanted value, this is the cost parameter for the SVM.
-      3. 'type_matrix' variable of the suitable type of the sparse matrix that creates in the function 'set_cv_fit'
-        this paramter is for the the files name that creats after the classifictaion
+      In this file, change:
+      1. The 'file_name_load' variable to the wanted csv file name.
+      2. The 'c_parameter' variable to the wanted value, this is the cost parameter for the SVM.
+      3. The 'type_matrix' variable of the suitable type of the sparse matrix that creates in the function 'set_cv_fit'
+        This parameter is for the files name that are created after the classification
 
       NOTE: in the function 'set_cv_fit' - you can change the inner function 'CountVectorizer'
         to 'TfidfVectorizer' (just replace the comments).
 
     #### The file contains
-      this file contains the linear svm classifcation function
-      the classification is made with stratified cross validation with k folds.
-      when the classifier ends, it print the reault to the following files:
-      1. predictions file - the predictions of the svm, and the right label on the right (Comma separated)
-      2. statistics file that contains:
-        - numer of correct answers of the classifier.
-        - number of incorrect answers of the classifier.
-        - percent of the right answers.
-      3. two file with list of the categories number, and the number of correct/incorrect answers of each category
-        (so we can get some additional statistics on the results)
+      The linear SVM classification function
+      The classification is made with stratified cross validation with k folds.
+      When the classifier ends, it print the results to the following files:
+      1. Predictions file - the predictions of the SVM, and the right label on the right (Comma separated)
+      2. Statistics file that contains:
+        - The number of correct answers of the classifier.
+        - The number of incorrect answers of the classifier.
+        - The percent of the right answers.
+      3. Two files with a list of the categories numbers, and the number of correct/incorrect answers of each category (so that we can get some additional statistics on the results).
 		
 
 
